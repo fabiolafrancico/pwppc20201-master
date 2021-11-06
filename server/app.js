@@ -7,6 +7,11 @@ import logger from 'morgan';
 import indexRouter from '@s-routes/index';
 import usersRouter from '@s-routes/users';
 
+import  webpack from 'webpack';
+import WebpackDevMiddleware from 'webpack-dev-middleware';
+import WebpackHotMiddleware from 'webpack-hot-middleware';
+import  webpackConfig  from '../webpack.dev.config';
+
 var app = express();
 
 // view engine setup
